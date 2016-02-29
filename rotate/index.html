@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/carousel.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+    <title>旋转木马</title>
+  </head>
+  <body style="padding: 50px">
+    <div class="J_Poster poster-main" data-setting='{
+      "width": 800,
+      "height": 270,
+      "posterWidth":640,
+      "posterHeight": 270,
+      "verticalAlign": "bottom",
+      "scale": 0.5,
+      "speed": 2000,
+      "delay": 1000,
+      "autoPlay": true
+    }'>
+      <div class="poster-btn poster-prev-btn"></div>
+      <ul class="poster-list">
+        <li class="poster-item"><a href="#"><img src="imgs/1.jpg" alt="" width="100%" /></a></li>
+        <li class="poster-item"><a href="#"><img src="imgs/2.jpg" alt="" width="100%" /></a></li>
+        <li class="poster-item"><a href="#"><img src="imgs/3.jpg" alt="" width="100%" /></a></li>
+        <li class="poster-item"><a href="#"><img src="imgs/4.jpg" alt="" width="100%" /></a></li>
+        <li class="poster-item"><a href="#"><img src="imgs/5.jpg" alt="" width="100%" /></a></li>
+      </ul>
+      <div class="poster-btn poster-next-btn"></div>
+
+    </div>
+
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript">
+      $(function() {
+
+
+
+        // Carousel: var c = new Carousel($('.J_Poster').eq(0))获取单个控件
+        Carousel.init($('.J_Poster'));      // 获取所有控件，此时为一个集合
+      })
+    </script>
+  </body>
+</html>
