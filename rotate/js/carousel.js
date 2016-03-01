@@ -173,7 +173,6 @@
             opacity: 1 / oloop,
             left: i * gap,
             top: _self.setVerticalAlign(leftHeight)
-
           });
           leftWidth = leftWidth / _self.setting.scale;
           leftHeight = leftHeight / _self.setting.scale
